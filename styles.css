@@ -146,8 +146,6 @@ button[type="submit"] {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px; /* Comfortable spacing */
     margin: 16px;
-    margin-left: 100px;
-    margin-right: 100px;
     align-items: center; /* Center items vertically */
 
   }
