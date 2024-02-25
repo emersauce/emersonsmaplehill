@@ -159,7 +159,7 @@ button[type="submit"] {
     display: none; /* Hidden by default */
     position: fixed;
     z-index: 999;
-    padding-top: 100px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -172,15 +172,15 @@ button[type="submit"] {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-height: 80vh;
   }
   
   .close {
     position: absolute;
-    top: 25px;
-    right: 35px;
+    top: 10px;
+    right: 20px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
   }
   
