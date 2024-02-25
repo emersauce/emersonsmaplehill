@@ -1,0 +1,226 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('images/maple-tree.jpeg');
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+    padding: 100px 0;
+    background-position: center center;
+    
+}
+
+#hero h2 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 1px  rgba(0,0,0,1); /* Add text shadow */
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+#hero.about {
+    background-image: url('images/jeff-beth.jpg');
+}
+
+#hero.visit {
+    background-image: url('images/cabin.jpg');
+}
+
+#hero.products {
+    background-image: url('images/shelved-syrup.png');
+
+}
+
+
+/* About Section Styles */
+#info {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+
+}
+
+
+#info h2 {
+    margin: 20px;
+}
+
+#info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+#info li {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.map{
+    width: 80vw;
+}
+/* Footer Styles */
+footer {
+    background-color: #582b07;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px; /* Comfortable spacing */
+    margin: 16px;;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Lightbox styles */
+  .lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  /* Caption */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+  }
+  
+  /* Navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
